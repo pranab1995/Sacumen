@@ -4,8 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pytest = "*"
 pyyaml = "*"
+setuptools = "*"
+sacumen = {path = "./dist/sacumen-0.1.0-py3-none-any.whl"}
 
 [dev-packages]
 
