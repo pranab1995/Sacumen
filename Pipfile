@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 pyyaml = "*"
 setuptools = "*"
-sacumen = {path = "./dist/sacumen-0.1.0-py3-none-any.whl"}
 
 [dev-packages]
 

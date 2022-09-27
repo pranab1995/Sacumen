@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d360a5175264d386063e280d7670f1c27e444395f13374c09ab099d56f7b8231"
+            "sha256": "747779179a2ebe31727d8b0ca42ff721b0ce0322b5d2d17bc527a228c127044b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -61,13 +61,6 @@
             ],
             "index": "pypi",
             "version": "==6.0"
-        },
-        "sacumen": {
-            "hashes": [
-                "sha256:159d8eba3409426020f5e0b7179ba5c1ceaa8243a33e4df5e56f18817dcf2b56"
-            ],
-            "path": "./dist/sacumen-0.1.0-py3-none-any.whl",
-            "version": "==0.1.0"
         }
     },
     "develop": {}
