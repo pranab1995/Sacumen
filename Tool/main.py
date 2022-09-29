@@ -1,11 +1,11 @@
 import json
 import os
-from cfg_to_dict import cfg_to_dict
+from Tool.cfg_to_dict import cfg_to_dict
 from collections.abc import MutableMapping
 
 
-from conf_to_dict import conf_to_dict
-from yaml_to_dict import yaml_to_dict
+from Tool.conf_to_dict import conf_to_dict
+from Tool.yaml_to_dict import yaml_to_dict
 
 def flatten_dict(d: MutableMapping, parent_key: str = '', sep: str ='.') -> MutableMapping:
     items = []
