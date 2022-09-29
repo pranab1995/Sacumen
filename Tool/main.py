@@ -17,9 +17,9 @@ def flatten_dict(d: MutableMapping, parent_key: str = '', sep: str ='.') -> Muta
             items.append((new_key, v))
     return dict(items)
 
-def control_flow():
+def control_flow(path):
     """Control flow of the program."""
-    path = input("Enter the path of the file: ").strip()
+    path = path.strip()
     if os.path.exists(path):
         extension= path.split(".")[-1]
         if extension == "conf":
