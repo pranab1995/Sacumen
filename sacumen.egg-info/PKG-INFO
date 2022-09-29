@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sacumen
+Version: 0.1.0
+Summary: A tool to convert configuration files to JSON or ENV file
+Home-page: https://github.com/pranab1995/Sacumen
+Author: Pranab Kumar Moharana
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
