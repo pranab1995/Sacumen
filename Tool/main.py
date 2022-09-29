@@ -1,11 +1,9 @@
 import json
 import os
-from Tool.cfg_to_dict import cfg_to_dict
 from collections.abc import MutableMapping
 import yaml
 from yaml.loader import FullLoader
-from Tool.conf_to_dict import conf_to_dict
-from Tool.yaml_to_dict import yaml_to_dict
+
 
 import configparser
 config = configparser.ConfigParser()
@@ -83,7 +81,6 @@ def control_flow(path):
             for key, val in output.items():
                 f.write(f"{key}={val}\n")
 
-control_flow("D:\Test_Sacumen\Sacumen\sample.yaml")
         
 
 
