@@ -2,10 +2,46 @@ import json
 import os
 from Tool.cfg_to_dict import cfg_to_dict
 from collections.abc import MutableMapping
-
-
+import yaml
+from yaml.loader import FullLoader
 from Tool.conf_to_dict import conf_to_dict
 from Tool.yaml_to_dict import yaml_to_dict
+
+import configparser
+config = configparser.ConfigParser()
+
+
+
+
+
+
+# Method to convert the yaml file to a dictionary
+def yaml_to_dict(filename):
+    with open(filename, 'r') as stream:
+        dict=yaml.load(stream, Loader=FullLoader)
+        return dict
+
+#Method to convert the .cfg file to a dictionary
+def cfg_to_dict(filename):
+    config.read(filename)
+    dict = {}
+    for section in config.sections():
+        dict[section] = {}
+        for option in config.options(section):
+            dict[section][option] = config.get(section, option)
+    return dict
+
+# Program to convert .conf file to dict
+def conf_to_dict(filename):
+    config.read(filename)
+
+    dict = {}
+    for section in config.sections():
+        dict[section] = {}
+        for option in config.options(section):
+            dict[section][option] = config.get(section, option)
+
+    return dict
 
 
 #Method to make a nested dictionary flat
@@ -46,7 +82,8 @@ def control_flow(path):
         with open("output.env", "w") as f:
             for key, val in output.items():
                 f.write(f"{key}={val}\n")
-                
+
+control_flow("D:\Test_Sacumen\Sacumen\sample.yaml")
         
 
 

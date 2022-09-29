@@ -1,10 +1,7 @@
 README.md
 setup.py
 Tool/__init__.py
-Tool/cfg_to_dict.py
-Tool/conf_to_dict.py
 Tool/main.py
-Tool/yaml_to_dict.py
 sacumen.egg-info/PKG-INFO
 sacumen.egg-info/SOURCES.txt
 sacumen.egg-info/dependency_links.txt
