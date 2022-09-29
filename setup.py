@@ -2,7 +2,7 @@ from turtle import setup
 import setuptools
 
 setuptools.setup(
-    name='sacumen',
+    name='Tool',
     version='0.1.0',    
     description='A tool to convert configuration files to JSON or ENV file', 
     url='https://github.com/pranab1995/Sacumen',
