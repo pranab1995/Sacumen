@@ -7,6 +7,8 @@ from collections.abc import MutableMapping
 from Tool.conf_to_dict import conf_to_dict
 from Tool.yaml_to_dict import yaml_to_dict
 
+
+#Method to make a nested dictionary flat
 def flatten_dict(d: MutableMapping, parent_key: str = '', sep: str ='.') -> MutableMapping:
     items = []
     for k, v in d.items():
@@ -17,6 +19,8 @@ def flatten_dict(d: MutableMapping, parent_key: str = '', sep: str ='.') -> Muta
             items.append((new_key, v))
     return dict(items)
 
+
+#Main function to handle control flow
 def control_flow(path):
     """Control flow of the program."""
     path = path.strip()
@@ -32,7 +36,7 @@ def control_flow(path):
     output = flatten_dict(output)
     # print(output)
 
-    output_format = input("Enter the output format, choose 'json' or 'env' ").strip()
+    output_format = input("Enter the output format, choose 'json' or 'env': ").strip()
     if output_format == "json":
         json_object = json.dumps(output, indent = 4) 
         with open("sample.json", "w") as outfile:
@@ -44,9 +48,5 @@ def control_flow(path):
                 f.write(f"{key}={val}\n")
                 
         
-
-
-
-control_flow()
 
 
