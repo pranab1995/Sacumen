@@ -68,20 +68,21 @@ def control_flow(path):
             output = cfg_to_dict(path)
     
     output = flatten_dict(output)
-    # print(output)
 
-    output_format = input("Enter the output format, choose 'json' or 'env': ").strip()
+    output_format = input("Your data is ready. Enter the output format, choose from 'json' or 'env': ").strip()
     if output_format == "json":
         json_object = json.dumps(output, indent = 4) 
-        with open("sample.json", "w") as outfile:
+        with open("output.json", "w") as outfile:
             outfile.write(json_object)
+        print("Output file has been created in JSON format. Please check your working directory")
 
     elif output_format == "env":
         with open("output.env", "w") as f:
             for key, val in output.items():
                 f.write(f"{key}={val}\n")
-
-control_flow("D:\Test_Sacumen\Sacumen\sample.yaml")
+        print("Output file has been created in JSON format. Please check your working directory")
         
 
+        
+control_flow("D:\Test_Sacumen\Sacumen\sample.yaml")
 
