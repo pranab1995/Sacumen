@@ -1,8 +1,0 @@
-README.md
-setup.py
-Tool/__init__.py
-Tool/main.py
-sacumen.egg-info/PKG-INFO
-sacumen.egg-info/SOURCES.txt
-sacumen.egg-info/dependency_links.txt
-sacumen.egg-info/top_level.txt

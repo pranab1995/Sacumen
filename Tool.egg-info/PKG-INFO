@@ -1,5 +1,5 @@
 Metadata-Version: 2.1
-Name: sacumen
+Name: Tool
 Version: 0.1.0
 Summary: A tool to convert configuration files to JSON or ENV file
 Home-page: https://github.com/pranab1995/Sacumen
